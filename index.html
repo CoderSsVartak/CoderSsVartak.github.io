@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sahil's Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="navbar">
+                <nav>
+                    <a href="index.html">Home Page</a>
+                    <a href="about.html">About</a>
+                    <a href="https://github.com/CoderSsVartak?tab=repositories">Projects</a>
+                    <a href="media/Resume.pdf"> My Resume</a>
+                    
+                </nav>
+            </div>
+            <div class="info-card">
+                
+                <img src="media/sahil.jpg" alt="Profile Picture" class="profile-img">
+                <div>
+                    <div class="info">
+                        <h2>My Profile Overview</h2>
+                        <p>
+                            Currently pursuing Undergraduate in Computer Engineering from <b>Rajiv Gandhi Institute of Technology, Versova, Mumbai.</b>
+                            I am highly motivated towards working in the field of Artificial Intelligence, with major focus on its subdomains of Computer Vision
+                            and Natural language Processing. I am <b>fluent in Python and the use of Databases</b>. I also have multiple projects in the field 
+                            reflecting my expertise in it. 
+                        </p>
+                        <p>
+                            During my Undergraduate days, I focused on both academics and extra-curricular activities. I was a constant and an integral
+                            part of Student Council of our college, and our departmental committee Computer Engineer's Student Society(CESS).
+                        </p>
+                        <p>
+                            My future goals include completing a Master from the <b>University of Southern California</b> and then working for a tech giant such as Google, 
+                            Open AI, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="text-align: center; color: orange; margin-top: 50px;"> My Top Projects </h1>
+            <div class="project-bar">
+                
+                <div class="project-card">
+                    <a href="https://github.com/CoderSsVartak/Image-Reconstruction"><img src="media/github.png", alt="Github Logo"></a>
+                    <a href="https://github.com/CoderSsVartak/Image-Reconstruction"><h2>Facial Image Denoising and Reconstruction</h2></a>
+                    <p>This is my final year project which made use of CNN to denoise facial images and GAN Architecture to reconstruct faces, when a partial subset of the faces is provided</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/CoderSsVartak/Auto_Encoder"><img src="media/github.png", alt="Github Logo"></a>
+                    <a href="https://github.com/CoderSsVartak/Auto_Encoder"><h2>Auto Encoder for MNIST dataset </h2></a>
+                    <p>The project made use of Auto encoders to learn the digits from the images and provide an enoding for them. The neural network also helped remove various different types of noise from these images.</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/CoderSsVartak/Sentiment_Analysis"><img src="media/github.png", alt="Github Logo"></a>
+                    <a href="https://github.com/CoderSsVartak/Sentiment_Analysis"><h2>Sentiment Analysis </h2></a>
+                    <p>The project was developed in order to filter out negative tweets coming in from the user. The neural network can handle around 12,000 tweets in a time limit of 2 seconds to encounter the Big Data problem of Twitter.</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/CoderSsVartak/password_generator"><img src="media/github.png", alt="Github Logo"></a>
+                    <a href="https://github.com/CoderSsVartak/password_generator"><h2>Password Generator</h2></a>
+                    <p>It is a website similar to the Google AutoFill service. It stores your passwords using encryption and also generates passwords which can be used by the user.</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/CoderSsVartak/Customer_Prediction"><img src="media/github.png", alt="Github Logo"></a>
+                    <a href="https://github.com/CoderSsVartak/Customer_Prediction"><h2>Customer Prediction</h2></a>
+                    <p>The project was my first point of entry into Neural networks. I created a binary classification algorithm to decide whether the user leaves a bank or not depending upon factors such as credit score, bank balance, account activity, etc</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/CoderSsVartak/Texathon"><img src="media/github.png", alt="Github Logo"></a>
+                    <a href="https://github.com/CoderSsVartak/Texathon"><h2>Texathon</h2></a>
+                    <p>A text based game created using Python</p>
+                </div>
+               
+            </div>
+        </div>
+    </body>
+    <footer> 
+        <p>-Created by Sahil Vartak</p>
+        <p>-Last Update @2021</p>
+        <p id="date"> </p><script>
+            document.getElementById('date').innerHTML = "© " +  new Date().getFullYear();
+        </script>
+    </footer>
+</html>
