@@ -125,6 +125,10 @@
         height: 100%;
         backface-visibility: hidden;
     }
+    .info-card .under-img:active .flip-card{
+        opacity: 100%;
+        transform: rotateY(180deg);
+    }
     .info-card .flip-card:active .front-card{
         position: relative;
         transform: rotateY(180deg);
