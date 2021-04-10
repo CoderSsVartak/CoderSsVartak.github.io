@@ -2,7 +2,8 @@
     /* Scrollbar Code */
     /* width */
     ::-webkit-scrollbar {
-        width: 5px;
+        width: 0
+        px;
         height: 5px;
     }
     
@@ -36,10 +37,16 @@
         color: white;
         border-radius: 5px;
         background-color: #fa9232;
-        padding: 20px;
+        padding: 5px;
         text-align: right;
         border-radius: 15px;
         box-shadow: 5px 5px 10px gray;
+
+    }
+    .mobile-navbar .btn img:hover{
+        /* border: solid black; */
+        width: 40px;
+        height: 40px;
 
     }
     .mobile-navbar button{
@@ -48,22 +55,25 @@
         font-size: larger;
         font-weight: bolder;
         color:white;
-        padding: 20px;
+        padding: 2px;
     }
     .mobile-navbar .mobile{
         display: none;
         width: 100%;
         flex-direction: column;
-        transition: 0.3s;
+        transition: 0.4s;
     }
     .mobile-navbar nav a{
         padding-top: 15px;
         padding-bottom: 15px;
+        margin-top: 5px;
         font-size: large;
         text-decoration: none;
         color: whitesmoke;
         font-weight: bold;
         text-align: left;
+        border: solid 1px white;
+        border-radius: 5px;
     }
     .mobile-navbar nav a:hover{
         background-color: white;
@@ -72,6 +82,14 @@
         border-radius: 15px;
         text-align: left;
         width: 100%;
+    }
+    .mobile-navbar{
+        align-items: flex-end;
+    }
+    /* menu icon */
+    .mobile-navbar .btn img{
+        width: 40px;
+        height: 40px;
     }
 
     /* General Information & overview card */
@@ -90,6 +108,13 @@
     .info-card b{
         color: blue;
     }
+    .info-card .flip-card:hover .front-card{
+        transform: rotateY(0deg);
+        opacity: 100%;
+    }
+    .info-card .under-img{
+        display: none;
+    }
     /* change height and width of the card according to the size of the image */
     .info-card .profile-img{
         position: relative;
@@ -97,7 +122,7 @@
         border-radius: 5px;
         width: 100%;
         height: 45%;
-        border-radius: 15px;
+        border-radius: 15px 15px 0px 0px;
         overflow: hidden;
     }
     .info-card .info h2{
@@ -105,8 +130,8 @@
         text-align: center;
         margin-top: 15px;
         margin-left: 5%;
-        color: black;
-        font-family: cursive;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
     }
     .info-card .info p{
         /* margin-right: 3000px; */
@@ -160,7 +185,7 @@
         margin: 25px;
         text-align: center;
         color: white;
-        font-family: cursive;
+        font-family: 'Times New Roman', Times, serif;
         box-shadow: 10px 10px 10px gray;
         overflow-y: auto;
         justify-content: center;
@@ -168,6 +193,7 @@
     .project-bar .project-card p{
         text-align: justify;
         margin: 10px;
+        font-size: larger;
     }
     .project-bar .project-card img{
         width: 150px;
@@ -182,15 +208,16 @@
 
     /* Contact us Card */
     .card-wrapper{
-        margin-left: 5%;
-        width: 90%;
+        width: 100%;
+        height: 100px;
+        margin-left: 20%;
     }
     .card-wrapper .card{
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         overflow: hidden;
     }
-    .card-wrapper .card img, .skills .card img{
+    .card-wrapper .card img{
         width: 100%;
         height: 100%;
     }
@@ -205,8 +232,8 @@
         -webkit-overflow-scrolling: touch;
     }
     .skills .card img{
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
     }
     .skills .card{
         width: 100px;

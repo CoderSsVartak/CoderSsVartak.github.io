@@ -2,7 +2,7 @@
     /* Scrollbar Code */
     /* width */
     ::-webkit-scrollbar {
-        width: 5px;
+        width: 0px;
         height: 5px;
     }
     
@@ -48,6 +48,12 @@
         padding: 20px;
         border-radius: 15px;
     }
+    .navbar .active{
+        background-color: white;
+        color: orange;
+        padding: 15px;
+        border-radius: 10px;
+    }
 
     /* General Information & overview card */
     .info-card{
@@ -65,20 +71,56 @@
     .info-card b{
         color: blue;
     }
+
+    /* Code to display text when hovered over image */
+    .flip-card{
+        background-color: transparent;
+        perspective: 1000px;
+    }
+    .inner-card{
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+    }
+    .info-card .under-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    .info-card .flip-card:hover .front-card{
+        position: relative;
+        transform: rotateY(180deg);
+        transition: 0.8s;
+        opacity: 0%;
+        transform-style: preserve-3d;
+    }
+    .info-card .inner-card .under-img{
+        width: 280px;
+        height: 470px;
+        margin-top: 20%;
+        margin-left: 15px;
+        align-content: center;
+        text-align: justify;
+
+    }
+
     /* change height and width of the card according to the size of the image */
-    .profile-img{
+    .info-card .profile-img{
         position: absolute;
         background-color: orange;
         border-radius: 5px;
         width: 300px;
         height: 470px;
-        border-radius: 15px;
+        border-radius: 15px 0px 0px 15px;
     }
+
     .info-card .info h2{
         margin-left:380px;
         margin-top: 15px;
         color: white;
-        font-family: cursive;
+        font-family: 'Times New Roman', Times, serif;
     }
     .info-card .info p{
         margin-right: 15px;
@@ -116,7 +158,7 @@
         margin: 25px;
         text-align: center;
         color: white;
-        font-family: cursive;
+        font-family: 'Times New Roman', Times, serif;
         box-shadow: 10px 10px 10px gray;
         overflow-y: auto;
         justify-content: center;
@@ -124,6 +166,7 @@
     .project-bar .project-card p{
         text-align: justify;
         margin: 10px;
+        font-size: larger;
     }
     .project-bar .project-card img{
         width: 150px;

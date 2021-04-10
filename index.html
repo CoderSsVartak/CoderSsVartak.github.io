@@ -5,34 +5,49 @@
         <title>Sahil's Website</title>
         <link rel="stylesheet" href="style_desktop.css">
         <link rel="stylesheet" href="style_mobile.css">
-        <script src="script.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/Javascript"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="wrapper">
             <div class="navbar">
                 <nav>
-                    <a href="index.html">Home Page</a>
-                    <a href="about.html">About</a>
-                    <a href="https://github.com/CoderSsVartak?tab=repositories">Projects</a>
-                    <a href="media/Resume.pdf"> My Resume</a>
+                    <a href="index.html" class="anchor active">Home Page</a>
+                    <a href="about.html" class="anchor">About</a>
+                    <a href="https://github.com/CoderSsVartak?tab=repositories" class="anchor">Projects</a>
+                    <a href="media/Resume.pdf" class="anchor"> My Resume</a>
                     
                 </nav>
             </div>
 
-            <button type="menu" onclick="display()" class='mobile-navbar' id="mobile-navbar">Menu
-                <nav class="mobile" id="mobile-navigation">
-                    <a href="index.html">Home Page</a>
-                    <a href="about.html">About</a>
-                    <a href="https://github.com/CoderSsVartak?tab=repositories">Projects</a>
-                    <a href="media/Resume.pdf"> My Resume</a>
-                    
-                </nav>
-            </button>
-            
-            <div class="info-card">
-                
-                <img src="media/sahil.jpg" alt="Profile Picture" class="profile-img">
-                <div>
+            <div class='mobile-navbar' id="mobile-navbar">
+                <button type="menu" onclick="display()" class="btn"><img src="media/hamburger.jpg" alt="Menu"></button>
+
+                    <nav class="mobile" id="mobile-navigation">
+                        <a href="index.html">Home Page</a>
+                        <a href="about.html">About</a>
+                        <a href="https://github.com/CoderSsVartak?tab=repositories">Projects</a>
+                        <a href="media/Resume.pdf"> My Resume</a>
+                        
+                    </nav>
+            </div>
+
+            <div class="info-card">  
+                <div> 
+                    <div class="flip-card">
+                        <div class="inner-card">
+                            <div class="under-img" id="under-img">
+                                <p><b>Undergraduate CGPA:</b> 9.65/10 </p>
+                                <p><b>TOEFL score:</b> 101/120</p>
+                                <p><b>Paper's Published: </b> 2 </p>
+                                <p>Worked as Joint Sports Secretary for Student Council, Joint General Secretary for CESS and Asst. Technical Leader for Technical fest during undergrad.</p>
+                            </div>
+
+                            <div class='front-card'>
+                                <img src="media/sahil.jpg" alt="Profile Picture" class="profile-img" id="profile">
+                            </div>
+                        </div>
+                    </div>
                     <div class="info">
                         <h2>My Profile Overview</h2>
                         <p>
@@ -46,12 +61,13 @@
                             part of Student Council of our college, and our departmental committee Computer Engineer's Student Society(CESS).
                         </p>
                         <p>
-                            My future goals include completing a Master from the <b>University of Southern California</b> and then working for a tech giant such as Google, 
+                            My future goals include completing a Masters in CS from the <b>University of Southern California</b> and then working for a tech giant such as Google, 
                             Open AI, etc.
                         </p>
                     </div>
                 </div>
             </div>
+
             <h1 style="text-align: center; color: orange; margin-top: 50px;"> My Top Projects </h1>
             <div class="project-bar">
                 
@@ -91,9 +107,10 @@
     </body>
     <footer> 
         <p>-Created by Sahil Vartak</p>
-        <p>-Last Update @2021</p>
+        <p>-Last Updated @2021</p>
         <p id="date"> </p><script>
             document.getElementById('date').innerHTML = "© " +  new Date().getFullYear();
         </script>
     </footer>
+
 </html>
