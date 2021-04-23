@@ -1,4 +1,4 @@
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1600px) and (min-width: 800px){
     /* Scrollbar Code */
     /* width */
     ::-webkit-scrollbar {
@@ -45,7 +45,7 @@
         background-color: white;
         transition: 0.3s;
         color: #fa9232;
-        padding: 20px;
+        padding: 15px 15px 15px 15px;
         border-radius: 15px;
     }
     .navbar .active{
@@ -57,17 +57,23 @@
 
     /* General Information & overview card */
     .info-card{
-        align-items: center;
         background-color: orange;
         box-shadow: 10px 10px 10px gray;
         margin-top: 50px;
-        margin-right: 25%;
-        margin-left: 25%;
         border-radius: 15px;
-        min-width: 400px;
-        width: 700px;
+        min-width: 700px;
+        max-width: 700px;
+        width: 75%;
+
         height: 470px;
+        min-height: fit-content;
+        max-height: 470px;
+        /* overflow-y: scroll; */
+        margin: auto;
+        margin-top: 50px;
+    
     }
+
     .info-card b{
         color: blue;
     }
@@ -98,7 +104,7 @@
     }
     .info-card .inner-card .under-img{
         width: 280px;
-        height: 470px;
+        height: 550px;
         margin-top: 20%;
         margin-left: 15px;
         align-content: center;
@@ -107,6 +113,9 @@
     }
 
     /* change height and width of the card according to the size of the image */
+    .info-card .front-card{
+        height: 100%;
+    }
     .info-card .profile-img{
         position: absolute;
         background-color: orange;
@@ -130,25 +139,20 @@
         font-family: 'Times New Roman', Times, serif;
         font-size: large;
         color: whitesmoke;
+        min-height: fit-content;
+        min-width: fit-content;
     }
 
     /* Project cards */
     .project-bar{
-        width: 1500px;
+        width: 100%;
         height: 400px;
         display: flex;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
 
     }
-    .card-wrapper{
-        width: 800px;
-        height: 400px;
-        display: flex;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        
-    }
+
     .project-bar .project-card, .card-wrapper .card{
         background-color: orange;
         width: 250px;
@@ -181,30 +185,38 @@
 
     /* Contact us Card */
     .card-wrapper{
-        margin-left: 35%;
+        width: 600px;
+        height: 300px;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: auto;
+        
     }
+
     .card-wrapper .card{
         width: 100px;
         height: 100px;
         overflow: hidden;
     }
-    .card-wrapper .card img, .skills .card img{
+    .card-wrapper .card img{
         width: 100%;
         height: 100%;
     }
 
+
     /* Skills and Interest */
     .skills{
-        width: 1000px;
-        height: 300px;
+        width: 100%;
+        height: 250px;
+        margin: auto;
         display: flex;
-        margin-left: 250px;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
     .skills .card img{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
     .skills .card{
         width: 500px;
@@ -226,4 +238,39 @@
         color: white;
         font-size: medium;
     }
+    /* Courses page */
+    .courses .level{
+        border-radius: 15px;
+        border-style: thick;
+        width: 90%;
+        margin: auto;
+        box-shadow: 5px 5px 10px gray;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .courses .level .institution .summary{
+        display:flex;
+        border-style: none none solid none;
+        border-color: orange;
+        width: 97%;
+        margin: auto;
+    }
+    .courses .level .institution .summary h3{
+        margin-left: auto;
+        margin-top: auto;
+        text-align: center;
+    }
+    .courses .level .institution .about-institution p{
+        display: flex;
+        width: 97%;
+        margin: auto;
+        padding: 5px;
+        text-align: justify;
+    }
+    .courses .level .courses-at ul li{
+        font-weight: bold;
+        padding: 10px;
+    }
 }
+

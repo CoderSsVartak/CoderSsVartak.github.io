@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sahil's Website</title>
+        <link rel="stylesheet" href="style_desktop.css">
+        <link rel="stylesheet" href="style_mobile.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/Javascript"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="navbar">
+                <nav>
+                    <a href="index.html" class="anchor">Home Page</a>
+                    <a href="courses.html" class="anchor active">Courses Taken</a>
+                    <a href="about.html" class="anchor">About</a>
+                    <a href="https://github.com/CoderSsVartak?tab=repositories" class="anchor">Projects</a>
+                    <a href="media/Resume.pdf" class="anchor"> My Resume</a>
+                    
+                </nav>
+            </div>
+
+            <div class='mobile-navbar' id="mobile-navbar">
+                <button type="menu" onclick="display()" class="btn"><img src="media/hamburger.jpg" alt="Menu"></button>
+
+                    <nav class="mobile" id="mobile-navigation">
+                        <a href="index.html">Home Page</a>
+                        <a href="courses.html">Courses Taken</a>
+                        <a href="about.html">About</a>
+                        <a href="https://github.com/CoderSsVartak?tab=repositories">Projects</a>
+                        <a href="media/Resume.pdf"> My Resume</a>
+                        
+                    </nav>
+            </div>
+
+            <div class="courses">
+                <div class="level">
+                    <div class="institution">
+                        <div class="summary"> 
+                            <h2>Rajiv Gandhi Institute of Technology, Mumbai</h2>
+                            <h3> Grade: 9.65/10 </h3>
+                        </div>
+                        <div class="about-institution">
+                            <p>August 17 - May 21</p>
+                            <p>
+                                During my years as undergrad, I came across a myriad range of courses that interested 
+                                me and helped me improve my technical skills in the field. It was during this phase of my life, 
+                                that I decided to pursue a Master's degree in the field of Artificial Intelligence.
+                            </p>
+                        </div>
+                            
+                    </div>
+                    <div class="courses-at">
+                        <ul>
+                            <li>Introduction to Object Oriented Programming: Java & Python</li>
+                            <li>Data Structures</li>
+                            <li>Algorithms</li>
+                            <li>Database Management System</li>
+                            <li>Machine Learning</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Digital Signal and Image Processing</li>
+                            <li>Natural Language Processing</li>
+                            <li>Big Data Analytics</li>
+                            <li>Cryptography and System Securities</li>
+                            <li>Computer Networks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer> 
+        <p>-Created by Sahil Vartak</p>
+        <p>-Last Updated @2021</p>
+        <p id="date"> </p><script>
+            document.getElementById('date').innerHTML = "© " +  new Date().getFullYear();
+        </script>
+    </footer>
+
+</html>
