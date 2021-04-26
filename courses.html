@@ -22,7 +22,7 @@
             </div>
 
             <div class='mobile-navbar' id="mobile-navbar">
-                <button type="menu" onclick="display()" class="btn"><img src="media/hamburger.jpg" alt="Menu"></button>
+                <button type="menu" onclick="display()" class="btn"><img src="media/hamburger.jpg" alt="Menu" id='menu-img'></button>
 
                     <nav class="mobile" id="mobile-navigation">
                         <a href="index.html">Home Page</a>
@@ -38,6 +38,29 @@
                 <div class="level">
                     <div class="institution">
                         <div class="summary"> 
+                            <h2>University of Southern California</h2>
+                            <h3> Grade:  </h3>
+                        </div>
+                        <div class="about-institution">
+                            <p>August 21 - May 23</p>
+                            <p>
+                                My interest towards Artificial Intelligence began during my Undergraduate days due to which I decided to 
+                                strengthen my Knowledge in the field by pursuing a masters degree. During these 2 years, I plan on getting well-versed 
+                                with the concepts of AI and the mathematics involved in the same.
+                            </p>
+                        </div>
+                            
+                    </div>
+                    <div class="courses-at">
+                        <ul>
+                            <!-- Add the undertaken courses here under li tag-->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="level">
+                    <div class="institution">
+                        <div class="summary"> 
                             <h2>Rajiv Gandhi Institute of Technology, Mumbai</h2>
                             <h3> Grade: 9.65/10 </h3>
                         </div>
@@ -45,7 +68,8 @@
                             <p>August 17 - May 21</p>
                             <p>
                                 During my years as undergrad, I came across a myriad range of courses that interested 
-                                me and helped me improve my technical skills in the field. It was during this phase of my life, 
+                                me and helped me improve my technical skills in the field. I mastered the skills and techniques required 
+                                for programming & logic design, Web development, AI, Cryptography, Database and Data Mining. It was during this phase of my life, 
                                 that I decided to pursue a Master's degree in the field of Artificial Intelligence.
                             </p>
                         </div>
@@ -67,11 +91,14 @@
                         </ul>
                     </div>
                 </div>
+            
             </div>
+
+
         </div>
     </body>
     <footer> 
-        <p>-Created by Sahil Vartak</p>
+        <p>-Created by Sahil Vartak using HTML, CSS & Javascript</p>
         <p>-Last Updated @2021</p>
         <p id="date"> </p><script>
             document.getElementById('date').innerHTML = "© " +  new Date().getFullYear();
