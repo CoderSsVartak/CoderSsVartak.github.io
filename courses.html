@@ -11,6 +11,8 @@
     <body>
         <div class="wrapper">
             <div class="navbar">
+                <h1>Sahil Vartak's Portfolio</h1>
+
                 <nav>
                     <a href="index.html" class="anchor">Home Page</a>
                     <a href="courses.html" class="anchor active">Courses Taken</a>
@@ -22,8 +24,10 @@
             </div>
 
             <div class='mobile-navbar' id="mobile-navbar">
-                <button type="menu" onclick="display()" class="btn"><img src="media/hamburger.jpg" alt="Menu" id='menu-img'></button>
-
+                <div class="navbar-head">
+                    <h1>Sahil Vartak's Portfolio</h1>
+                    <button type="menu" onclick="display()" class="btn"><img src="media/hamburger.jpg" alt="Menu" id='menu-img'></button>    
+                </div>
                     <nav class="mobile" id="mobile-navigation">
                         <a href="index.html">Home Page</a>
                         <a href="courses.html">Courses Taken</a>
@@ -101,8 +105,9 @@
         <p>-Created by Sahil Vartak using HTML, CSS & Javascript</p>
         <p>-Last Updated @2021</p>
         <p id="date"> </p><script>
-            document.getElementById('date').innerHTML = "© " +  new Date().getFullYear();
+            document.getElementById('date').innerHTML = " Copyright © " +  new Date().getFullYear();
         </script>
+        Email Address: sahilravu213@gmail.com | Phone No: +91 9867865863
     </footer>
 
 </html>

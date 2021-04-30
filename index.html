@@ -11,6 +11,7 @@
     <body>
         <div class="wrapper">
             <div class="navbar">
+                <h1>Sahil Vartak's Portfolio</h1>
                 <nav>
                     <a href="index.html" class="anchor active">Home Page</a>
                     <a href="courses.html" class="anchor">Courses Taken</a>
@@ -22,7 +23,11 @@
             </div>
 
             <div class='mobile-navbar' id="mobile-navbar">
-                <button type="menu" onclick="display()" class="btn"><img src="media/hamburger.jpg" alt="Menu" id='menu-img'></button>
+                <div class="navbar-head">
+                    <h1>Sahil Vartak's Portfolio</h1>
+                    <button type="menu" onclick="display()" class="btn"><img src="media/hamburger.jpg" alt="Menu" id='menu-img'></button>    
+                </div>
+                
 
                     <nav class="mobile" id="mobile-navigation">
                         <a href="index.html">Home Page</a>
@@ -46,13 +51,13 @@
                                 <p>Worked as Joint Sports Secretary for Student Council, Joint General Secretary for CESS and Asst. Technical Leader for Technical fest during undergrad.</p>
                             </div>
 
-                            <div class='front-card'>
+                            <div class='front-card' onscroll="hide_image()">
                                 <img src="media/sahil.jpg" alt="Profile Picture" class="profile-img" id="profile">
                             </div>
                         </div>
                     </div>
                     <div class="info">
-                        <h2>Sahil Vartak's Overview</h2>
+                        <h2>About Sahil Vartak</h2>
                         <p>
                             Currently pursuing Undergraduate in Computer Engineering from <b>Rajiv Gandhi Institute of Technology, Versova, Mumbai.</b>
                             I am highly motivated towards working in the field of Artificial Intelligence, with major focus on its subdomains of Computer Vision
@@ -66,12 +71,16 @@
                         <p>
                             My future goals include completing a Masters in CS from the <b>University of Southern California</b> and then working for a tech giant such as Google, 
                             Open AI, Amazon etc.
+                            
                         </p>
+                        <marquee id='indicator' style="width: 300px;">
+                            <small>Click Image for Overview</small>
+                        </marquee>
                     </div>
                 </div>
             </div>
 
-            <h1 style="text-align: center; color: orange; margin-top: 50px;"> My Top Projects </h1>
+            <h1 class="heading" style="text-align: center; color: black; margin-top: 50px;"> My Top Projects </h1>
             <div class="project-bar" style="background-color: whitesmoke;">
                 
                 <div class="project-card">
@@ -118,8 +127,9 @@
         <p>-Created by Sahil Vartak using HTML, CSS & Javascript</p>
         <p>-Last Updated @2021</p>
         <p id="date"> </p><script>
-            document.getElementById('date').innerHTML = "© " +  new Date().getFullYear();
+            document.getElementById('date').innerHTML = "Copyright © " +  new Date().getFullYear();
         </script>
+        Email Address: sahilravu213@gmail.com | Phone No: +91 9867865863
     </footer>
 
 </html>

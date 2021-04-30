@@ -8,7 +8,7 @@
     
     /* Track */
     ::-webkit-scrollbar-track {
-        background: orange;
+        background: #5fd6e6;
     }
     
     /* Handle */
@@ -21,39 +21,43 @@
         background: black;
     }
 
-
+    body{
+        background-color: white;
+        background-image: linear-gradient(135deg, white, rgba(0, 0, 0, 0.8));
+    }
     /* Mobile Navbar */
     .navbar{
         display: none;
     }
     .mobile-navbar{
-        display: flex;
+        background-color: #5fd6e6;
+        display: inline-flex;
         flex-direction: column;
         height: auto;
-        width: 95%;
-        align-items: center;
-        font-size: larger;
-        color: white;
-        border-radius: 5px;
-        background-color: #fa9232;
+        width: 100%;    
+        color: black;
         padding: 5px;
-        text-align: right;
-        border-radius: 15px;
-        box-shadow: 5px 5px 10px 5px gray;
-        /* transition: linear 2s; */
+        align-items: center;
     }
-
+    .mobile-navbar .navbar-head{
+        width:100%;
+        flex-direction: row;
+        display: flex;
+    }
+    .mobile-navbar h1{
+        margin-right: auto;
+    }
     .mobile-navbar .btn img:hover{
+        align-self: center;
         width: 40px;
         height: 40px;
     }
     .mobile-navbar button{
-        background-color: #fa9232;
+        background-color: #5fd6e6;
         border: none;
-        font-size: larger;
-        font-weight: bolder;
-        color:white;
-        padding: 2px;
+        width: 60px;
+        height: 60px;
+        align-self: center;
     }
     .mobile-navbar .mobile{
         display: none;
@@ -66,16 +70,15 @@
         margin-top: 5px;
         font-size: large;
         text-decoration: none;
-        color: whitesmoke;
+        color: white;
         font-weight: bold;
         text-align: left;
-        /* border: solid 1px white; */
-        border-radius: 5px;
     }
     .mobile-navbar nav a:hover{
-        background-color: white;
-        transition: 0.4s;
-        color: #fa9232;
+        background-color: black;
+        background-image: linear-gradient(-45deg, lightgray, rgba(0, 0, 0, 0.1));
+        transition: linear 0.4s;
+        color: white;
         /* border-radius: px; */
         text-align: left;
         transition: linear .4s;
@@ -94,7 +97,7 @@
     /* General Information & overview card */
     .info-card{
         position: relative;
-        background-color: orange;
+        background-color: #5fd6e6;
         box-shadow: 5px 5px 10px 5px gray;
         margin: auto;
         margin-top: 50px;
@@ -106,7 +109,7 @@
         text-align: justify;
     }
     .info-card b{
-        color: blue;
+        color: black;
     }
     /* Code to flip card on clicked */
     .flip-card{
@@ -127,12 +130,10 @@
     }
     .info-card .under-img:active .flip-card{
         opacity: 100%;
-        /* transform: rotateY(180deg); */
         transition: ease-in-out;
     }
     .info-card .flip-card:active .front-card{
         position: relative;
-        /* transform: rotateY(180deg); */
         transition: 1.2s;
         opacity: 0%;
         transform-style: preserve-3d;
@@ -155,7 +156,7 @@
     /* change height and width of the card according to the size of the image */
     .info-card .profile-img{
         position: relative;
-        background-color: orange;
+        background-color: #5fd6e6;
         border-radius: 5px;
         width: 100%;
         height: 45%;
@@ -166,8 +167,8 @@
         position: relative;
         text-align: center;
         margin-top: 15px;
-        margin-left: 5%;
-        color: white;
+        margin: auto;
+        color: black;
         font-family: 'Times New Roman', Times, serif;
     }
     .info-card .info p{
@@ -192,14 +193,14 @@
 
     }
     .project-bar .project-card{
-        background-color: orange;
-        width: 70%;
+        background-color: #5fd6e6;
+        width: 270px;
         height: 80%;
         flex-shrink: 0;
         border-radius: 15px;
         margin: 25px;
         text-align: center;
-        color: white;
+        color: black;
         font-family: 'Times New Roman', Times, serif;
         box-shadow: 5px 5px 10px 5px gray;
         overflow-y: auto;
@@ -217,12 +218,13 @@
     }
     .project-bar .project-card a{
         text-decoration: none;
-        color: white;
+        color: black;
     }
 
 
     /* Contact us Card */
     .card-wrapper{
+        background-color: lightgray;
         width: 100%;
         margin:auto;
         height: 100px;
@@ -237,15 +239,13 @@
     }
     .card-wrapper .card{
         margin: auto;
-        background-color: orange;
+        background-color: white;
         width: 250px;
         height: 70%;
         align-items: center;
         flex-shrink: 0;
         border-radius: 15px;
         text-align: center;
-        color: white;
-        font-family: 'Times New Roman', Times, serif;
         overflow-y: hidden;
         justify-content: center;
 
@@ -293,7 +293,7 @@
     }
 
     .skills .card p{
-        color: orange;
+        color: #5fd6e6;
     }
     .skills .card .stars{
         display: block;
@@ -320,7 +320,7 @@
     }
 
     footer{
-        background-color: #fa9232;
+        background-color: #5fd6e6;
         margin-top: 10px;
         text-align: center;
         border-radius: 15px;
@@ -336,12 +336,13 @@
         box-shadow: 5px 5px 10px 5px gray;
         margin-top: 50px;
         margin-bottom: 30px;
+        background-color: white;
     }
 
     .courses .level .institution .summary{
         display:flex;
         border-style: none none solid none;
-        border-color: orange;
+        border-color: #5fd6e6;
         width: 97%;
         margin: auto;
     }

@@ -2,13 +2,13 @@
     /* Scrollbar Code */
     /* width */
     ::-webkit-scrollbar {
-        width: 0px;
+        width: 5px;
         height: 5px;
     }
     
     /* Track */
     ::-webkit-scrollbar-track {
-        background: orange;
+        background:#5fd6e6;;
     }
     
     /* Handle */
@@ -21,21 +21,37 @@
         background: black;
     }
 
+    body{
+        width: 100%;
+        background-color: white;
+        background-image: linear-gradient(135deg, white, rgba(0, 0, 0, 0.8));
+        overflow-x: hidden;
+    }
 
     /* Desktop Navbar */
     .mobile-navbar{
         display: none;
     }
     .navbar{
-        background-color: #fa9232;
-        padding: 20px;
+        background-color: #60d9e9;
+        background-image: linear-gradient(80deg, rgb(77, 203, 253), #60d9e9);
+        width: 98%;
+        padding: 10px;
         text-align: right;
-        border-radius: 15px;
-        box-shadow: 5px 5px 10px gray;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    .navbar h1{
+        margin-right: auto;
+    }
+    .navbar nav{
+        margin-left: auto;
+        margin-right: 35px;
     }
     .navbar nav a{
-        padding: 10px;
-        padding-right: 25px;
+        padding: 25px;
         font-size: large;
         text-decoration: none;
         color: whitesmoke;
@@ -43,40 +59,40 @@
         align-items: center;
     }
     .navbar nav a:hover{
-        background-color: white;
-        transition: 0.3s;
-        color: #fa9232;
-        padding: 15px 15px 15px 15px;
-        border-radius: 15px;
+        background-color: black;
+        background-image: linear-gradient(45deg, lightgray, rgba(0, 0, 0, 0.1));
+        transition: linear 0.4s;
+        color: white;
+        padding: 25px;
     }
     .navbar .active{
-        background-color: white;
-        color: orange;
-        padding: 15px;
-        border-radius: 15px;
+        background-color: black;
+        background-image: linear-gradient(45deg, lightgray, rgba(0, 0, 0, 0.1));
+        color: whitesmoke;
+        padding: 25px;
     }
 
+    
     /* General Information & overview card */
     .info-card{
-        background-color: orange;
-        box-shadow: 10px 10px 10px gray;
+        background-color: #5fd6e6;
+        box-shadow: 5px 5px 10px black;
         margin-top: 50px;
-        border-radius: 15px;
-        min-width: 700px;
+        min-width: 600px;
         max-width: 700px;
         width: 75%;
-
         height: 470px;
         min-height: fit-content;
-        max-height: 470px;
-        /* overflow-y: scroll; */
+        max-height: 550px;
         margin: auto;
         margin-top: 50px;
+        font-stretch: ultra-expanded;
+        font-weight: normal;
     
     }
 
     .info-card b{
-        color: blue;
+        color: black;
     }
 
     /* Code to display text when hovered over image */
@@ -88,6 +104,9 @@
         position: relative;
         width: 100%;
         height: 100%;
+        color: rgb(71, 70, 70);
+        font-stretch: ultra-expanded;
+        font-weight: normal;
 
     }
     .info-card .under-img{
@@ -95,13 +114,6 @@
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-    }
-    .info-card .flip-card:hover .front-card{
-        position: relative;
-        transform: rotateY(180deg);
-        transition: 0.8s;
-        opacity: 0%;
-        transform-style: preserve-3d;
     }
     .info-card .inner-card .under-img{
         width: 280px;
@@ -119,17 +131,16 @@
     }
     .info-card .profile-img{
         position: absolute;
-        background-color: orange;
-        border-radius: 5px;
+        background-color: gray;
+
         width: 300px;
         height: 470px;
-        border-radius: 15px 0px 0px 15px;
     }
 
     .info-card .info h2{
         margin-left:380px;
         margin-top: 15px;
-        color: white;
+        color: black;
         font-family: 'Times New Roman', Times, serif;
     }
     .info-card .info p{
@@ -139,12 +150,18 @@
         text-align: justify;
         font-family: 'Times New Roman', Times, serif;
         font-size: large;
-        color: whitesmoke;
+        color: rgb(71, 70, 70);
         min-height: fit-content;
         min-width: fit-content;
     }
 
     /* Project cards */
+    .heading{
+        width: 100%;
+        /* background-color: white; */
+        padding: 20px;
+        margin-bottom: 0px;
+    }
     .project-bar{
         width: 100%;
         height: 400px;
@@ -155,18 +172,24 @@
     }
 
     .project-bar .project-card, .card-wrapper .card{
-        background-color: orange;
+        background-color: #5fd6e6;
         width: 250px;
         height: 80%;
         flex-shrink: 0;
-        border-radius: 15px;
         margin: 25px;
         text-align: center;
-        color: white;
+        color: black;
         font-family: 'Times New Roman', Times, serif;
-        box-shadow: 10px 10px 10px gray;
+        /* box-shadow: 10px 10px 10px gray; */
         overflow-y: auto;
         justify-content: center;
+    }
+    .project-bar .project-card:hover{
+        background-color: #5fd6e6;
+        transition: transform 0.4s;
+        transform: scale3d(1.1, 1.1, 2);
+        box-shadow: 10px 10px 10px gray;
+
     }
     .project-bar .project-card p{
         text-align: justify;
@@ -176,12 +199,10 @@
     .project-bar .project-card img{
         width: 100%;
         height: 200px;
-        border-radius: 15px 15px 0px 0px;
-        /* margin-top: 10px; */
     }
     .project-bar .project-card a{
         text-decoration: none;
-        color: white;
+        color: black;
     }
 
 
@@ -220,9 +241,10 @@
         width: 100px;
         height: 100px;
         margin-top: 10px;
+        border-radius: 150px;
     }
     .skills .card{
-        background-color: lightgray;
+        background-color: white;
         width: 100%;
         font-weight: bold;
         font-size: large;
@@ -236,7 +258,7 @@
     }
 
     .skills .card p{
-        color: orange;
+        color: black;
     }
     .skills .card .stars{
         display: block;
@@ -263,20 +285,23 @@
 
 
     footer{
-        background-color: #fa9232;
+        background-color: #5fd6e6;
         margin-top: 10px;
+        width: 95%;
+        font-weight: bold;
         text-align: center;
-        border-radius: 15px;
         color: white;
         font-size: medium;
+        padding: 30px;
     }
     /* Courses page */
     .courses .level{
+        background-color: white;
         border-radius: 15px;
         border-style: thick;
         width: 90%;
         margin: auto;
-        box-shadow: 5px 5px 10px gray;
+        box-shadow: 5px 5px 10px black;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -284,7 +309,7 @@
     .courses .level .institution .summary{
         display:flex;
         border-style: none none solid none;
-        border-color: orange;
+        border-color: black;
         width: 97%;
         margin: auto;
     }
@@ -304,4 +329,78 @@
         font-weight: bold;
         padding: 10px;
     }
+}
+
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 800px){
+    .navbar{
+        display: none;
+    }
+    .mobile-navbar{
+        background-color: #5fd6e6;
+        display: inline-flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;    
+        color: black;
+        padding: 5px;
+        align-items: center;
+    }
+    .mobile-navbar .navbar-head{
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+    }
+    .mobile-navbar h1{
+        margin-right: auto;
+    }
+    .mobile-navbar .btn img:hover{
+        align-self: center;
+        width: 40px;
+        height: 40px;
+    }
+    .mobile-navbar button{
+        background-color: #5fd6e6;
+        border: none;
+        width: 60px;
+        height: 60px;
+        align-self: center;
+    }
+    .mobile-navbar .mobile{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .mobile-navbar nav a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 5px;
+        font-size: large;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-align: left;
+    }
+    .mobile-navbar nav a:hover{
+        background-color: black;
+        background-image: linear-gradient(-45deg, lightgray, rgba(0, 0, 0, 0.1));
+        transition: linear 0.4s;
+        color: white;
+        /* border-radius: px; */
+        text-align: left;
+        transition: linear .4s;
+        /* transition-delay: .2s; */
+        width: auto;
+    }
+    .mobile-navbar{
+        align-items: flex-end;
+    }
+    /* menu icon */
+    .mobile-navbar .btn img{
+        width: 40px;
+        height: 40px;
+    }
+
 }
